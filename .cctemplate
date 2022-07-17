@@ -1,0 +1,13 @@
+{
+   "metadata":{
+      "version":"1"
+   },
+   "name": "Cloud Code Sample Repository",
+   "templates":[
+      {
+         "path":"java-springboot-api",
+         "name":"Java Spring Boot API",
+         "description":"Sample REST API built using Java Spring Boot"
+      }
+   ]
+}
