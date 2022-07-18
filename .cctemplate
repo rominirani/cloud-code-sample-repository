@@ -8,6 +8,11 @@
          "path":"java-springboot-api",
          "name":"Java Spring Boot API",
          "description":"Sample REST API built using Java Spring Boot"
+      },
+       {
+         "path":"python-flask-api",
+         "name":"Python Flask API",
+         "description":"Sample REST API built using Python Flask"
       }
    ]
 }
