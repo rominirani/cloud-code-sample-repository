@@ -7,7 +7,7 @@ import threading
 
 iter = itertools.count(start=1,step=1)
 app = Flask(__name__)
-app.logger.setLevel(logging.DEBUG)
+app.logger.setLevel(logging.INFO)
 
 inventory_items = {"I-1":10, "I-2":20,"I-3":30}
 
@@ -25,7 +25,7 @@ def greeting():
 
 @app.route('/inventory', methods=['GET'])
 def inventorylist():
-   return jsonify(inventory_items)
+   return jsonify([inventory_items])
 
 @app.route('/inventory/<string:productid>', methods=['GET'])
 def inventory(productid):
@@ -33,6 +33,7 @@ def inventory(productid):
    if qty == None:
     productid='Invalid Product Id'
     qty = 0
+    app.logger.warning("Received inventory request for incorrect productid:{}".format(productid))
    return jsonify({'productid':productid,'qty':qty})
 
 
