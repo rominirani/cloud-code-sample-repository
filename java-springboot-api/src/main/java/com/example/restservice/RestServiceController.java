@@ -30,6 +30,11 @@ public class RestServiceController {
 	public Greeting greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
 		return new Greeting(counter.incrementAndGet(), String.format(template, name));
 	}
+	
+	@GetMapping("/healthy")
+	public String healthy() {
+		return "All Izz Well";
+	}
 
 	@GetMapping("/inventory")
 	public List<InventoryItem> inventorylist() {
@@ -53,7 +58,7 @@ public class RestServiceController {
 			}
 			if (!bFound) {
 				log.warn("Received inventory request for incorrect productid:" +productid);
-				item = new InventoryItem("Invalid product id",0);
+				item = new InventoryItem(productid,-1);
 			}
 			return item;
 		}
