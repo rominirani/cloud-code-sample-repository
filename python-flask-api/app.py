@@ -23,6 +23,10 @@ def greeting():
 
     return jsonify({'id':value,'content':name})
 
+@app.route('/healthy', methods=['GET'])
+def healthy():
+    return "All Izz Well"
+
 @app.route('/inventory', methods=['GET'])
 def inventorylist():
    return jsonify([inventory_items])
