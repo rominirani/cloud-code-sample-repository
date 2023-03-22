@@ -60,7 +60,7 @@ Sample API Request and Response are shown below:
 2. Click on `New Application`
 3. Select `Custom Application`
 4. When asked for the Git Repository URL, enter the URL of this repository: `https://github.com/rominirani/cloud-code-sample-repository.git`
-5. You will shown both the projects, Java and Pythong based. Select one of your choice.
+5. You will shown both the projects, Java and Python based. Select one of your choice.
 6. Complete the rest of the steps to import the projects into Visual Studio Code. 
 
 You are all set now and can directly deploy these APIs to a Serverless Compute Ennvironment like Cloud Run.
