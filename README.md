@@ -64,3 +64,16 @@ Sample API Request and Response are shown below:
 6. Complete the rest of the steps to import the projects into Visual Studio Code. 
 
 You are all set now and can directly deploy these APIs to a Serverless Compute Ennvironment like Cloud Run.
+
+## Injecting delay into Inventory Requests
+
+If you are looking to simulate Service Level Objectives (SLO) Monitoring in Google Cloud Monitoring, you can setup a Latency SLO vis Service Monitoring on the Cloud Run service and introduce delays in the /inventory/<Product-ID> API endpoint to simulate eating into the Error Budget. To do that, ensure that you deploy a new version of the Cloud Run service by providing an environment variable in the Cloud Run service settings. Provide the environment variable: `delay` and with a value `True`. 
+
+Note: This is available only in the `Python` version of the API.
+
+## Injecting a failure in Uptime Checks
+
+If you are looking to simulate an Uptime Check failure in Google Cloud Monitoring, simply provide an environment variable: `uptimecheckfailure` and with a value `True`. This will result in the `/healthy` endpoint returning an error. 
+
+Note: This is available only in the `Python` version of the API.
+
