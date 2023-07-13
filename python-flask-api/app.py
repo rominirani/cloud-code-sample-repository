@@ -35,8 +35,8 @@ def inventory(productid):
       time.sleep(random.random())
 
    if qty == None:
-    app.logger.warning("Received inventory request for incorrect productid:{}".format(productid))
-    qty = -1
+      app.logger.warning("Received inventory request for incorrect productid:{}".format(productid))
+      qty = -1
    return jsonify({'productid':productid,'qty':qty})
 
 if __name__ == '__main__':
