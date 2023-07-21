@@ -1,0 +1,15 @@
+{
+    "name": "inventory-api-test",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+      "request": "^2.88.2",
+      "@google-cloud/synthetics-sdk-mocha": "^0.1.1",
+      "chai": "^4.3.7",
+      "node-fetch": "^2.6.0",
+      "@google-cloud/functions-framework": "^3.1.2"
+    },
+    "author": "Romin Irani",
+    "license": "Apache-2.0"
+  }
