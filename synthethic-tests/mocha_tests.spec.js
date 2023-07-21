@@ -5,7 +5,7 @@ describe("My Inventory API", function() {
 
   describe("Get Inventory List", function() {
 
-    var url = "https://myinventoryapi-ido3ocn3pq-uc.a.run.app/inventory";
+    var url = "SERVICE_URL/inventory";
 
     it("returns status 200", function(done) {
       request(url, function(error, response, body) {
@@ -33,7 +33,7 @@ describe("My Inventory API", function() {
 
   describe("Get Incorrect Inventory Item", function() {
 
-    var url = "https://myinventoryapi-ido3ocn3pq-uc.a.run.app/inventory/ABC";
+    var url = "SERVICE_URL/inventory/ABC";
 
     it("returns status 200", function(done) {
       request(url, function(error, response, body) {
@@ -61,7 +61,7 @@ describe("My Inventory API", function() {
 
   describe("Get Inventory Item", function() {
 
-    var url = "https://myinventoryapi-ido3ocn3pq-uc.a.run.app/inventory/I-1";
+    var url = "SERVICE_URL/inventory/I-1";
 
     it("returns status 200", function(done) {
       request(url, function(error, response, body) {
