@@ -80,7 +80,7 @@ The `synthetic-tests` folder contains the Mocha / Chai tests that test out the P
 - Get Specific Inventory Item (Check if the test returns the specific inventory item correctly: Product ID = I-1)
 - Get Incorrect Inventory Item (Check if the test return Qty = -1, if an item is not present)
 
-The instructions to deploy the Synthetic Monitoring tests is covered in this blog post. 
+The instructions to deploy the Synthetic Monitoring tests is covered in this [blog post](https://medium.com/google-cloud/google-cloud-synthetic-monitoring-tutorial-ce502f81bb24). 
 
 ## Injecting delay into Inventory Requests
 
