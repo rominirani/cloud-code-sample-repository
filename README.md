@@ -2,17 +2,11 @@
 This repository demonstrates how you can create a Sample Repository of code samples that you can use as a template while creating a New Application via [Cloud Code Visual Studio](https://cloud.google.com/code) plugin. Official instructions are provided [here](https://cloud.google.com/code/docs/vscode/set-up-sample-repo).
 
 ## Custom Samples Configuration File (.cctemplate)
-The key thing to understand is the presence of the `.cctemplate` file in this repo. It contains the `templates` element that has entries for the two folders or samples that you have in this repository:
-- `java-springboot-api` *Deprecated*
+The key thing to understand is the presence of the `.cctemplate` file in this repo. It contains the `templates` element that has entry for the folder or sample(s) that you have in this repository:
 - `python-flask-api`
 
 ```
    "templates":[
-      {
-         "path":"java-springboot-api (Deprecated)",
-         "name":"Java Spring Boot API",
-         "description":"Sample REST API built using Java Spring Boot"
-      },
        {
          "path":"python-flask-api",
          "name":"Python Flask API",
@@ -22,8 +16,8 @@ The key thing to understand is the presence of the `.cctemplate` file in this re
 }
 ```
 
-## What are the sample applications about?
-You can go through the two projects and you can pick your choice of either Java or Python based API. The application is a simple Inventory API application that exposes a REST API Endpoint with a couple of operations to list the inventory items and getting specific item inventory count. 
+## What is the same application about?
+The application is a simple Inventory API application that exposes a REST API Endpoint with a couple of operations to list the inventory items and getting specific item inventory count. 
 
 Once we deploy the API and assuming that it is hosted at `https://<somehost>`, we can access the API endpoints as follows:
 - `https://<somehost>/inventory`
@@ -60,7 +54,7 @@ Sample API Request and Response are shown below:
 2. Click on `New Application`
 3. Select `Custom Application`
 4. When asked for the Git Repository URL, enter the URL of this repository: `https://github.com/rominirani/cloud-code-sample-repository.git`
-5. You will shown both the projects, Java and Python based. Select one of your choice.
+5. You will shown the Python project. Select that.
 6. Complete the rest of the steps to import the projects into Visual Studio Code. 
 
 You are all set now and can directly deploy these APIs to a Serverless Compute Ennvironment like Cloud Run.
